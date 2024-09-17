@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+body{
+  height: 100vh;
+  background: linear-gradient(rgb(47,150,163),rgb(48,62,143));
+  font-family: sans-serif;
+}
+  
+
+.dropdown{
+  
+  display: flex;
+  background: none;
+  
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  text-decoration: none;
+  
+  
+
+  
+}
+.project,.product{
+  position: relative;
+  
+}
+.product ul,.project ul{
+  position: absolute;
+  background-color: rgb(47,150,163);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 100px;
+  height: 20vh;
+  align-items:center ;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  list-style: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10%);
+  transition: all 0.4s ease;
+ 
+  
+ 
+}
+.product a,.project a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-top: 10px;
+ 
+  
+  
+}
+.home a{
+  list-style: none;
+  text-decoration: none;
+  color: aliceblue;
+}
+.dropdown button{
+  font-size: 20px;
+  background: none;
+  background:none;
+  border: 0;
+  cursor: pointer;
+  color: aliceblue;
+  margin-top: 10px;
+  border-radius: 5px;
+  
+  
+  
+}
+.dropdown button:hover,.home :hover{
+  color:rgb(14, 63, 70) ;
+  
+}
+.project li,.product li{
+  background-color: rgb(47,150,163);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.project li:hover , .product li:hover{
+  background-color: rgb(241, 237, 237);
+  
+}
+
+.product button:focus + ul,.project button:focus + ul{
+  opacity: 1;
+  pointer-events: all;
+}
+
+.weather{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+.weather{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 200px;
+  align-items: center;
+  
+}
+.location{
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+ 
+  
+
+}
+
+.temperature{
+  align-items: center;
+  display: flex;
+  font-size: 30px;
+  margin-top: 90px;
+  
+}
+.temperature-description{
+  margin-top: 40px;
+  font-size: 30px;
+  
+}
+.icon{
+  margin-left: 200px;
+  
+  
+}
+.temperature span{
+  margin-left: 10px;
+  font-size: 30px;
+  margin-top: 2px;
+  
+}
